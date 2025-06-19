@@ -4,6 +4,7 @@ const nextConfig = {
     formats: ['image/webp'],
     disableStaticImages: true,
   },
+  swcMinify: false,
 };
 
 module.exports = nextConfig;

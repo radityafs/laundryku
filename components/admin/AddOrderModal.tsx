@@ -226,7 +226,7 @@ export default function AddOrderModal({ isOpen, onClose }: AddOrderModalProps) {
             })}
             type="tel"
             placeholder="081234567890"
-            disabled={selectedCustomer && selectedCustomer.phone != undefined}
+            disabled={selectedCustomer?.phone !== undefined}
             className={`w-full px-4 py-3 border-2 rounded-xl focus:ring-4 focus:ring-blue-100 transition-all duration-300 outline-none ${
               selectedCustomer && selectedCustomer.phone
                 ? 'bg-gray-100 border-gray-200 cursor-not-allowed'
